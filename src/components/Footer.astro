@@ -1,12 +1,21 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../img/logo/Logo.png";
+import C1 from "../img/c1.png";
+import C2 from "../img/c2.png";
+import C3 from "../img/c3.png";
+---
+
 <footer class="bg-Primary-Black dark:bg-gray-900 mt-40">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <a href="/src/pages/index.astro" class="flex items-center">
-          <img
-            src="/src/img/logo/logo.png"
-            class="h-18 mr-3 mb-8"
-            alt="FlowBite Logo"
+          <Image
+            src={Logo}
+            alt="A bird sitting on a nest of eggs."
+            width="160"
+            class="mb-8"
           />
         </a>
         <div class="flex space-x-4">
@@ -54,9 +63,27 @@
               >
             </li>
             <div class="flex space-x-4">
-              <span><img src="/src/img/c1.png" class="h-12" alt="" /></span>
-              <span><img src="/src/img/c2.png" class="h-12" alt="" /></span>
-              <span><img src="/src/img/c3.png" class="h-12" alt="" /></span>
+              <span>
+                <Image
+                  src={C1}
+                  alt="A bird sitting on a nest of eggs."
+                  width="64"
+                /></span
+              >
+              <span>
+                <Image
+                  src={C2}
+                  alt="A bird sitting on a nest of eggs."
+                  width="56"
+                /></span
+              >
+              <span>
+                <Image
+                  src={C3}
+                  alt="A bird sitting on a nest of eggs."
+                  width="64"
+                /></span
+              >
             </div>
           </ul>
         </div>

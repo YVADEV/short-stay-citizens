@@ -1,9 +1,14 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../img/logo/Logo.png";
+---
+
 <nav class="bg-Primary-Black border-gray-200 dark:bg-gray-900">
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
-    <a href="https://flowbite.com/" class="flex items-center">
-      <img src="/src/img/logo/logo.png" class="h-12 mr-3" alt="Flowbite Logo" />
+    <a href="index.html" class="flex items-center">
+      <Image src={Logo} alt="A bird sitting on a nest of eggs." width="80" />
       <span
         class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
       ></span>

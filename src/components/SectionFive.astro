@@ -1,3 +1,13 @@
+---
+import { Image } from "astro:assets";
+import bedImg from "../img/bed.svg";
+import bikeImg from "../img/bike.svg";
+import chatImg from "../img/chat.svg";
+import clearImg from "../img/clear.svg";
+import soupImg from "../img/soup.svg";
+import timeImg from "../img/time.svg";
+---
+
 <section>
   <!-- Container -->
   <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
@@ -27,7 +37,13 @@
                 <div
                   class="flex items-center justify-center w-12 h-12 mx-auto text-black rounded-xl"
                 >
-                  <img src="/src/img/chat.svg" alt="" />
+                  <Image
+                    src={chatImg}
+                    alt="apartment img"
+                    width="64"
+                    class="inline-block mb-2"
+                  />
+                  <!-- <img src="/src/img/chat.svg" alt="" /> -->
                 </div>
                 <p class="mt-4 text-lg font-semibold leading-6 text-white">
                   Chat with <br /> YAYS Insiders
@@ -42,7 +58,13 @@
                 <div
                   class="flex items-center justify-center w-12 h-12 mx-auto text-black rounded-xl"
                 >
-                  <img src="/src/img/bed.svg" alt="" />
+                  <Image
+                    src={bedImg}
+                    alt="apartment img"
+                    width="64"
+                    class="inline-block mb-2"
+                  />
+                  <!-- <img src="/src/img/bed.svg" alt="" /> -->
                 </div>
                 <p
                   class="mt-4 text-lg font-semibold leading-6 text-Primary-Blue"
@@ -59,7 +81,13 @@
                 <div
                   class="flex items-center justify-center w-12 h-12 mx-auto text-black rounded-xl"
                 >
-                  <img src="/src/img/bike.svg" alt="" />
+                  <Image
+                    src={bikeImg}
+                    alt="apartment img"
+                    width="64"
+                    class="inline-block mb-2"
+                  />
+                  <!-- <img src="/src/img/bike.svg" alt="" /> -->
                 </div>
                 <p
                   class="mt-4 text-lg font-semibold leading-6 text-Primary-Blue"
@@ -77,7 +105,13 @@
                 <div
                   class="flex items-center justify-center w-12 h-12 mx-auto text-black rounded-xl"
                 >
-                  <img src="/src/img/soup.svg" alt="" />
+                  <Image
+                    src={soupImg}
+                    alt="apartment img"
+                    width="64"
+                    class="inline-block mb-2"
+                  />
+                  <!-- <img src="/src/img/soup.svg" alt="" /> -->
                 </div>
                 <p
                   class="mt-4 text-lg font-semibold leading-6 text-Primary-Blue"
@@ -94,7 +128,13 @@
                 <div
                   class="flex items-center justify-center w-12 h-12 mx-auto text-black rounded-xl"
                 >
-                  <img src="/src/img/time.svg" alt="" />
+                  <Image
+                    src={timeImg}
+                    alt="apartment img"
+                    width="64"
+                    class="inline-block mb-2"
+                  />
+                  <!-- <img src="/src/img/time.svg" alt="" /> -->
                 </div>
                 <p
                   class="mt-4 text-lg font-semibold leading-6 text-Primary-Blue"
@@ -111,7 +151,13 @@
                 <div
                   class="flex items-center justify-center w-12 h-12 mx-auto text-black rounded-xl"
                 >
-                  <img src="/src/img/clear.svg" alt="" />
+                  <Image
+                    src={clearImg}
+                    alt="apartment img"
+                    width="64"
+                    class="inline-block mb-4"
+                  />
+                  <!-- <img src="/src/img/clear.svg" alt="" /> -->
                 </div>
                 <p
                   class="mt-4 text-lg font-semibold leading-6 text-Primary-Blue"

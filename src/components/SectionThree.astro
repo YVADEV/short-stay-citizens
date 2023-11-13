@@ -1,3 +1,10 @@
+---
+import { Image } from "astro:assets";
+import Ico1 from "../img/i1.png";
+import Ico2 from "../img/i2.png";
+import Ico3 from "../img/i3.png";
+---
+
 <section>
   <!-- Container -->
   <div
@@ -18,7 +25,13 @@
         class="flex flex-col items-center gap-6 border-r-[1px] px-10 py-8 h-[500px] bg-cover bg-blend-multiply bg-[#566E78] rounded-2xl max-[767px]:p-8 max-[767px] cursor-pointer transform
         transition duration-1000 hover:scale-95"
       >
-        <img src="/src/img/i1.png" alt="" class="inline-block h-16 mt-8" />
+        <Image
+          src={Ico1}
+          alt="apartment img"
+          width="64"
+          class="inline-block mt-8"
+        />
+        <!-- <img src="/src/img/i1.png" alt="" class="inline-block h-16 mt-8" /> -->
         <ul class="text-center text-white font-semibold text-lg">
           <li>Utensils</li>
           <li>Double bed</li>
@@ -35,7 +48,12 @@
         class="flex flex-col items-center gap-6 border-r-[1px] px-10 py-8 h-[500px] bg-cover bg-blend-multiply bg-[#566E78] rounded-2xl max-[767px]:p-8 max-[767px] cursor-pointer transform
         transition duration-1000 hover:scale-95"
       >
-        <img src="/src/img/i2.png" alt="" class="inline-block h-16 mt-8" />
+        <Image
+          src={Ico2}
+          alt="apartment img"
+          width="64"
+          class="inline-block mt-8"
+        />
         <ul class="text-center text-white font-semibold text-lg">
           <li>Own living room</li>
           <li>Tea and coffee</li>
@@ -52,7 +70,12 @@
         class="flex flex-col items-center gap-6 border-r-[1px] px-10 py-8 h-[500px] bg-cover bg-blend-multiply bg-[#566E78] rounded-2xl max-[767px]:p-8 max-[767px] cursor-pointer transform
         transition duration-1000 hover:scale-95"
       >
-        <img src="/src/img/i3.png" alt="" class="inline-block h-16 mt-8" />
+        <Image
+          src={Ico3}
+          alt="apartment img"
+          width="64"
+          class="inline-block mt-8"
+        />
         <ul class="text-center text-white font-semibold text-lg">
           <li>Dryer</li>
           <li>Fully Equipped Kitchen</li>
