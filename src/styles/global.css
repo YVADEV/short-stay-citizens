@@ -44,3 +44,12 @@ li button[aria-selected="true"]:hover{
 }
 
 
+.bg-1{
+    background-image:url('../img/ap-3.png');
+}
+.bg-2{
+    background-image:url('../img/ap-4.png');
+}
+.bg-3{
+    background-image:url('../img/ap-5.png');
+}
