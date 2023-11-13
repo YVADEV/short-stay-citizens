@@ -93,24 +93,4 @@ requestAnimationFrame(raf);
   });
 
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.swiper-container', {
-      // ... your other Swiper options ...
-      loop: true,
-      initialSlide: 1,
-    });
-  
-    // Add click event listeners to all slides
-    swiper.slides.each(function (index, slide) {
-      slide.addEventListener('click', function () {
-        if (swiper.clickedIndex > swiper.activeIndex) {
-          swiper.slideNext();
-        } else if (swiper.clickedIndex < swiper.activeIndex) {
-          swiper.slidePrev();
-        }
-      });
-    });
-  });
-  
-
 //no scroll
