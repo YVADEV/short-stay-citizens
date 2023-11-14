@@ -94,3 +94,85 @@ requestAnimationFrame(raf);
 
 
 //no scroll
+
+
+
+// test new 3d carousel
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-images img');
+const totalSlides = slides.length;
+
+const updateCarousel = () => {
+    slides.forEach(slide => {
+        slide.classList.remove('active', 'prev', 'next');
+        slide.style.opacity = '0'; // Hide all slides
+    });
+
+    // Wrap around the slides
+    const prevSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    const nextSlide = (currentSlide + 1) % totalSlides;
+
+    // Position the slides
+    slides[currentSlide].classList.add('active');
+    slides[currentSlide].style.opacity = '1'; // Show current slide
+
+    if (slides[prevSlide]) {
+        slides[prevSlide].classList.add('prev');
+        slides[prevSlide].style.opacity = '0.6'; // Show peek of previous slide
+    }
+
+    if (slides[nextSlide]) {
+        slides[nextSlide].classList.add('next');
+        slides[nextSlide].style.opacity = '0.6'; // Show peek of next slide
+    }
+};
+
+const moveSlide = (n) => {
+    currentSlide = (n + currentSlide + totalSlides) % totalSlides;
+    updateCarousel();
+};
+
+// ... (same initialization as before) ...
+
+let startX, isDown = false;
+
+const dragStart = (e) => {
+    isDown = true;
+    startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+};
+
+const dragEnd = () => {
+    if (isDown) {
+        if (moveX > 50) {
+            moveSlide(-1);
+        } else if (moveX < -50) {
+            moveSlide(1);
+        }
+    }
+    isDown = false;
+};
+
+let moveX;
+
+const dragMove = (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+    moveX = x - startX;
+};
+
+// Attach the handlers to the carousel
+const carousel = document.querySelector('.carousel');
+carousel.addEventListener('mousedown', dragStart);
+carousel.addEventListener('mouseup', dragEnd);
+carousel.addEventListener('mouseleave', dragEnd);
+carousel.addEventListener('mousemove', dragMove);
+carousel.addEventListener('touchstart', dragStart);
+carousel.addEventListener('touchend', dragEnd);
+carousel.addEventListener('touchmove', dragMove);
+
+// ... (rest of the script is the same as previous example) ...
+
+
+window.onload = updateCarousel; // Initialize the carousel
