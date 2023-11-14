@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+import Hero from "../components/Hero.astro";
+import SectionOne from "../components/SectionOne.astro";
+import SectionTwo from "../components/SectionTwo.astro";
+import SectionThree from "../components/SectionThree.astro";
+import SectionFour from "../components/SectionFour.astro";
+import SectionFive from "../components/SectionFive.astro";
+import SectionSix from "../components/SectionSix.astro";
+import Footer from "../components/Footer.astro";
+
+// import Carousel from "../components/Carousel.astro";
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<Layout title="Welcome to Astro.">
+  <Hero />
+  <SectionOne />
+  <SectionTwo />
+  <SectionThree />
+  <SectionFour />
+  <SectionFive />
+  <SectionSix />
+  <Footer />
+</Layout>

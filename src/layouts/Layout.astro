@@ -1,16 +1,6 @@
 ---
 import "../styles/global.css";
 import Nav from "../components/Nav.astro";
-import Hero from "../components/Hero.astro";
-import Footer from "../components/Footer.astro";
-import SectionOne from "../components/SectionOne.astro";
-import SectionTwo from "../components/SectionTwo.astro";
-import SectionThree from "../components/SectionThree.astro";
-import SectionFour from "../components/SectionFour.astro";
-import SectionFive from "../components/SectionFive.astro";
-import SectionSix from "../components/SectionSix.astro";
-
-// import Carousel from "../components/Carousel.astro";
 interface Props {
   title: string;
 }
@@ -36,14 +26,7 @@ const { title } = Astro.props;
 
   <body>
     <Nav />
-    <Hero />
-    <SectionOne />
-    <SectionTwo />
-    <SectionThree />
-    <SectionFour />
-    <SectionFive />
-    <SectionSix />
-    <Footer />
+
     <slot />
 
     <script src="/src/script/script.js"></script>s

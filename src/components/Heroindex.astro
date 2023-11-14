@@ -1,0 +1,84 @@
+<section
+  class="bg-center bg-cover bg-no-repeat bg-[url('/src/img/heroindex.png')] bg-gray-500 bg-blend-multiply"
+>
+  <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-72">
+    <h1
+      class="mb-4 text-4xl font-medium tracking-tight leading-none text-white md:text-5xl lg:text-7xl"
+    >
+      Amsterdam
+    </h1>
+    <p
+      class="mb-8 text-lg font-base text-gray-200 lg:text-xl sm:px-16 lg:px-48"
+    >
+      Have a look at our selection of serviced apartments that are available.
+    </p>
+  </div>
+</section>
+
+<div class="px-4 mx-auto max-w-screen-xl text-center py-32">
+  <p
+    class="mb-8 text-lg font-base text-black text-start lg:text-xl sm:px-16 lg:px-28"
+  >
+    Select a city
+  </p>
+  <button
+    id="dropdownDefaultButton"
+    data-dropdown-toggle="dropdown"
+    class="lg:w-[1200px] h-[50px] justify-between text-black bg-white focus:ring-2 focus:outline-none focus:ring-Primary-Color border-Primary-Color border-4 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-white dark:focus:ring-Primary-Color"
+    type="button"
+    >Amsterdam <svg
+      class="w-2.5 h-2.5 ms-3"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 10 6"
+    >
+      <path
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="m1 1 4 4 4-4"></path>
+    </svg>
+  </button>
+
+  <!-- Dropdown menu -->
+  <div
+    id="dropdown"
+    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow lg:w-[1200px] dark:bg-gray-700"
+  >
+    <ul
+      class="py-2 text-sm text-gray-700 dark:text-gray-200"
+      aria-labelledby="dropdownDefaultButton"
+    >
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          >Dashboard</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          >Settings</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          >Earnings</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          >Sign out</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
