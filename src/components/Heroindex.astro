@@ -1,3 +1,31 @@
+<script>
+  
+  console.log('Try')
+  const url = 'https://tomcat-staging.younggloballiving.com:8443/api/provider_cities'
+  const token ='414d5845-b729-44e8-8776-2a901e18ee3a'
+fetch(url, {
+  method: 'GET',
+  headers: {
+    'Authorization': token  // You may also try 
+    //'Authorization': `Bearer ${token}`
+  },
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Fetch error:', error);
+  });
+
+</script>
+
+
 <section
   class="bg-center bg-cover bg-no-repeat bg-[url('/src/img/heroindex.png')] bg-gray-500 bg-blend-multiply"
 >

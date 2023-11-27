@@ -1,4 +1,5 @@
 // Initialization for ES Users
+import { AxiosHeaders } from "axios";
 import {
     Modal,
     Ripple,
@@ -176,3 +177,7 @@ carousel.addEventListener('touchmove', dragMove);
 
 
 window.onload = updateCarousel; // Initialize the carousel
+
+
+
+ 
